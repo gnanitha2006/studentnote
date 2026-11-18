@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>📚 NoteBook</h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#add-notes">Add Notes</a>
+            <a href="#my-notes">My Notes</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Student Notes App</h1>
+        <p>Organize your thoughts. Manage your studies. Learn better.</p>
+        <a href="#add-notes" class="main-btn">Start Writing</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h1>About Our Application</h1>
+        <p>
+            Student Notes App helps students create, organize,
+            edit and manage their study notes in one place.
+            It makes learning simple and organized.
+        </p>
+
+        <div class="features">
+            <div class="feature">
+                <h3>📝 Create Notes</h3>
+                <p>Write and save your important notes.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🔍 Search Notes</h3>
+                <p>Find your notes whenever you need them.</p>
+            </div>
+
+            <div class="feature">
+                <h3>✏️ Edit Notes</h3>
+                <p>Update your notes whenever required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Notes Section -->
+    <section id="add-notes" class="section">
+        <h1>Create Your Notes</h1>
+
+        <div class="note-form">
+            <input type="text" id="title"
+            placeholder="Enter note title">
+
+            <textarea id="description"
+            placeholder="Write your notes here..."></textarea>
+
+            <button onclick="addNote()">Save Note</button>
+        </div>
+    </section>
+
+    <!-- My Notes Section -->
+    <section id="my-notes" class="section">
+        <h1>My Notes</h1>
+
+        <input type="text" id="search"
+        placeholder="🔍 Search your notes..."
+        oninput="displayNotes()">
+
+        <div id="notes"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>📚 Student Notes App</h2>
+        <p>Learn. Write. Organize. Grow.</p>
+        <p>© 2026 Student Notes App</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
